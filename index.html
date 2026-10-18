@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navadurga and the 51 Shakti Peethas</title>
+<meta name="description" content="Nine forms of Goddess Durga with mantras, dhyana shlokas and legends, plus a searchable guide to the 51 Shakti Peethas.">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hind+Madurai:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><b>Shakti</b><nav><a href="#nine">Navadurga</a><a href="#mantras">Mantras</a><a href="#peethas">51 Peethas</a><a href="#texts">Texts</a></nav></header>
+<section id="hero"><div><h1>Nine forms of the Mother</h1><p>Choose a petal. Each of the nine Navadurga forms has her own day, vehicle, mantra and story.</p></div>
+<svg id="mandala" viewBox="-200 -200 400 400" role="group" aria-label="Nine Navadurga forms arranged in a circle"></svg></section>
+<section class="wrap" id="nine"><h2>The Navadurga</h2><p class="mut">Worshipped on the nine nights of Navaratri, in this order.</p><div id="cards" class="cards"></div></section>
+<section class="wrap narrow" id="mantras"><h2>Mantras and shlokas</h2>
+<h3>Nava Durga names (Devi Kavacha)</h3><blockquote>Prathamam Shailaputri cha dvitiyam Brahmacharini<br>Tritiyam Chandraghanteti Kushmandeti chaturthakam<br>Panchamam Skandamateti shashtham Katyayaniti cha<br>Saptamam Kalaratriti Mahagauriti chashtamam<br>Navamam Siddhidatri cha Navadurgah prakirtitah</blockquote>
+<h3>Universal Devi stuti</h3><blockquote>Ya Devi sarvabhuteshu Shakti-rupena samsthita<br>Namastasyai namastasyai namastasyai namo namah</blockquote><p class="mut">From the Devi Mahatmya (Durga Saptashati): salutations to the Goddess who abides in all beings as power.</p>
+<h3>Sarva Mangala</h3><blockquote>Sarva mangala mangalye shive sarvartha sadhike<br>Sharanye tryambake gauri Narayani namo 'stu te</blockquote>
+<h3>Durga Beej mantra</h3><blockquote>Om Dum Durgayai Namah</blockquote></section>
+<section class="wrap" id="peethas"><h2>The 51 Shakti Peethas</h2>
+<p class="narrow">After Sati ended her life in her father Daksha's yagna, a grief-stricken Shiva carried her body across the world. Vishnu's Sudarshana Chakra divided it, and each place where a part fell became a Shakti Peetha. At each, Shakti is guarded by a Bhairava, a form of Shiva.</p>
+<p class="narrow mut">Counts vary: 4 Adi Peethas, 18 Maha Peethas (Adi Shankaracharya's stotra) and 51 (Tantra Chudamani / Pithanirnaya). Lists differ between texts and some sites are disputed, so confirm locations before travelling.</p>
+<div class="tools"><input id="q" type="search" placeholder="Search by place, body part, Shakti or Bhairava" aria-label="Search peethas"><select id="c" aria-label="Filter by country"><option value="">All countries</option></select><span id="count" class="mut"></span></div>
+<div id="plist" class="plist"></div></section>
+<section class="wrap" id="texts"><h2>In the scriptures</h2><div class="cards" id="tx"></div></section>
+<footer>Compiled from traditional sources for an open source project. Jai Mata Di.</footer>
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mt"><div class="sheet"><button id="close">Close</button><h3 id="mt"></h3><p id="ms" class="mut"></p><div id="mb"></div></div></div>
+<script src="data.js"></script><script src="script.js"></script></body></html>

@@ -1,0 +1,31 @@
+:root{--bg:#1b0713;--card:#2b0f20;--ink:#fbeef0;--mut:#c9a3b0;--gold:#ffb627;--red:#e63950;color-scheme:dark}
+@media(prefers-color-scheme:light){:root{--bg:#fff4f1;--card:#ffe3dc;--ink:#2b0a18;--mut:#744455;--gold:#a15c00;--red:#b3122a;color-scheme:light}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 'Hind Madurai',sans-serif}
+h1,h2,h3{font-family:Marcellus,serif;font-weight:400;line-height:1.15}h2{font-size:clamp(2rem,4vw,3rem);margin:0 0 .5rem}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.mut{color:var(--mut)}
+.top{position:fixed;inset:0 0 auto;display:flex;justify-content:space-between;padding:12px 5vw;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px);z-index:5;font:1.4rem Marcellus}
+.top a{margin-left:1.2rem;font:600 1rem 'Hind Madurai';color:var(--ink);text-decoration:none}.top a:hover{color:var(--gold)}
+#hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;padding:90px 5vw 30px;background:radial-gradient(circle at 70% 50%,#5a1230,var(--bg) 65%)}
+h1{font-size:clamp(2.8rem,7vw,5.5rem);margin:0 0 1rem}#hero p{max-width:30em;color:var(--mut);font-size:1.15rem}
+#mandala{width:100%;max-width:480px;justify-self:center}#mandala .ring{fill:none;stroke:var(--gold);opacity:.35}
+#mandala g.p{cursor:pointer}#mandala g.p circle{transition:r .25s}#mandala g.p:hover circle,#mandala g.p:focus circle{r:30}
+#mandala g.p:focus{outline:none}#mandala g.p:focus circle{stroke:#fff;stroke-width:3}
+#mandala text{font:12px 'Hind Madurai';fill:#1b0713;text-anchor:middle;pointer-events:none;font-weight:600}
+#mandala .spin{animation:rot 90s linear infinite;transform-origin:center}@keyframes rot{to{transform:rotate(360deg)}}
+.wrap{max-width:1200px;margin:auto;padding:80px 5vw}.narrow{max-width:760px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.1rem;margin-top:1.5rem}
+.card{text-align:left;background:var(--card);border:0;border-top:6px solid var(--c,var(--gold));padding:1.2rem;border-radius:2px 26px 2px 26px;color:var(--ink);font:inherit;cursor:pointer;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}.card h3{font-size:1.6rem;margin:0}.card small{color:var(--mut)}.card p{margin:.4rem 0 0;font-size:.95rem;color:var(--mut)}
+div.card{cursor:default}div.card:hover{transform:none}
+blockquote{margin:.6rem 0 1.2rem;padding:1rem 1.3rem;border-left:4px solid var(--red);background:var(--card);font:1.25rem/1.9 Marcellus,serif}
+.tools{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin:1.2rem 0}
+input,select,button{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--mut);padding:.55rem .9rem;border-radius:8px}input{flex:1 1 260px}button{cursor:pointer}button:hover{border-color:var(--gold)}
+.plist{display:grid;gap:.5rem}.row{display:grid;grid-template-columns:2rem 1.2fr 1.2fr 1fr;gap:.8rem;align-items:center;background:var(--card);padding:.7rem 1rem;border-radius:6px;text-align:left;width:100%}
+.row b{font-family:Marcellus,serif;font-size:1.2rem}.row .part{color:var(--gold)}
+.modal{position:fixed;inset:0;background:rgba(10,0,8,.78);display:grid;place-items:center;padding:1rem;z-index:10}.modal[hidden]{display:none}
+.sheet{background:var(--bg);border:1px solid var(--gold);border-radius:4px 30px 4px 30px;max-width:720px;width:100%;max-height:90vh;overflow:auto;padding:1.6rem;position:relative}#close{position:absolute;top:1rem;right:1rem}
+.sheet h3{font-size:2.3rem;margin:0}dl{display:grid;grid-template-columns:max-content 1fr;gap:.3rem 1rem}dt{color:var(--gold);font-weight:600}dd{margin:0}
+footer{text-align:center;padding:40px 5vw;color:var(--mut)}
+@media(max-width:800px){#hero{grid-template-columns:1fr}.top nav{display:none}.row{grid-template-columns:2rem 1fr;}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
